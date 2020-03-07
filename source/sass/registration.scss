@@ -1,0 +1,55 @@
+.registration__user {
+ margin-right: auto;
+  padding-left: 10px;
+}
+.registration__user h1 {
+  @include light-color();
+  padding: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-bottom: 1px solid #bfbfbf;
+}
+.registration-wrapper {
+  width: 460px;
+}
+.registration__user-form {
+  display: flex;
+  flex-direction: column;
+  @include light-color();
+  padding: 20px;
+  padding-right: 80px;
+}
+.registration__user-form label:first-child {
+  margin-top: 0;
+}
+.clipart-woman {
+  position: absolute;
+  bottom: 156px;
+  left: 411px;
+}
+.clipart-message {
+  background-image: url("../img/oval.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 456px;
+  height: 290px;
+  position: absolute;
+  bottom: 519px;
+  left: 573px;
+  @include font-color();
+}
+.clipart-message-text {
+  width: 350px;
+  margin-top: 46px;
+  margin-left: 77px;
+  color: #5c5a5a;
+  h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+  p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-top: 0;
+  }
+}

@@ -1,0 +1,101 @@
+.account__redaction-wrapper {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 20px;
+  @include light-color;
+  width: 1000px;
+}
+.account__redaction-avatar {
+  display: flex;
+  flex-direction: column;
+  img {
+    margin-left: -8px;
+    margin-right: 5px;
+  }
+}
+.div-line {
+  display: flex;
+  &::after {
+    content: "";
+    height: 1px;
+    background-color: #979797;
+    flex-grow: 1;
+    margin-top: 13px;
+    margin-left: 10px;
+  }
+}
+.account__redaction-section-wrapper {
+display: flex;
+}
+.search-task__categories {
+  max-width: 740px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.account__redaction-section {
+  padding-bottom: 20px;
+}
+.account__redaction {
+  display: flex;
+  flex-wrap: wrap;
+  label {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    flex-grow: 1;
+    margin-bottom: 12px;
+    margin-top: 5px;
+    text-transform: uppercase;
+  }
+}
+.account__input {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  width: 310px;
+  margin-right: 20px;
+}
+.account__input--name {
+  width: 445px;
+}
+.account__input--email {
+  width: 382px;
+  margin-right: 0;
+}
+.account__input--address{
+  width: 605px;
+}
+.account__input--date {
+  width: 222px;
+  margin-right: 0;
+  .input-date{
+    background-position: 180px 12px;
+  }
+}
+.account__input--info {
+  width: 100%;
+  margin-right: 0;
+  margin-top: 30px;
+}
+.account_checkbox {
+  width: 219px;
+  label {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+.account_section--bottom {
+  flex-direction: column;
+}
+.account_checkbox--bottom {
+ flex-direction: row;
+  label {
+    width: 219px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+.account_checkbox--secrecy {
+  label {
+    width: 345px;
+  }
+}

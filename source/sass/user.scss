@@ -1,0 +1,192 @@
+.user__card-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-bottom: 30px;
+}
+.user__card {
+  display: flex;
+  margin-bottom: 5px;
+}
+.user__card img {
+  padding-top: 20px;
+  padding-right: 20px;
+}
+.user__card-general-information {
+ display: flex;
+  justify-content: space-between;
+}
+.user__card-general-information .content-view__h3{
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+.user__card-link {
+  display: flex;
+  flex-direction: column;
+}
+.user__card-link a {
+  position: relative;
+  padding-left: 38px;
+  margin-bottom: 7px;
+  &::after {
+    position: absolute;
+    content: "";
+    width: 19px;
+    height: 19px;
+  }
+}
+.user__card-link--tel {
+  background-image: url("../img/phone.png");
+  background-position: left;
+  background-repeat: no-repeat;
+}
+.user__card-link--email {
+  background-image: url("../img/email.png");
+  background-position: left;
+  background-repeat: no-repeat;
+}
+.user__card-link--skype {
+  background-image: url("../img/skype-logo.png");
+  background-position: left;
+  background-repeat: no-repeat;
+}
+.link-specialization a {
+  position: relative;
+  padding-left: 12px;
+  &::after {
+    position: absolute;
+    content: "";
+    width: 5px;
+    height: 5px;
+    @include font-color();
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    top: 9px;
+    left: 2px;
+    background-color: #606060;
+  }
+}
+.link-specialization a:first-child {
+  padding-left: 0;
+  &::after {
+  display: none;
+  }
+}
+.user__card-photo {
+  margin-right: 70px;
+}
+
+.five-stars__rate {
+  padding-left: 0;
+  margin-bottom: 5px;
+}
+.done-task {
+  font-size: 16px;
+  position: relative;
+  padding-right: 40px;
+}
+.done-task::after {
+  position: absolute;
+  content: "";
+  width: 5px;
+  height: 5px;
+  @include font-color();
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background-color: #606060;
+  top: 9px;
+  right: 18px;
+}
+.user__card-bookmark a {
+  position: relative;
+  padding-right: 77px;
+  line-height: 30px;
+}
+.user__card-bookmark b {
+  position: absolute;
+  content: "";
+  width: 25px;
+  height: 38px;
+  top: -5px;
+  right: 0;
+  background-image: url("../img/bookmark-white.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.user__card-bookmark--current b {
+  background-image: url("../img/bookmark-grey.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.user__card-bookmark b:hover {
+  background-image: url("../img/bookmark-grey.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.reviews-wrapper {
+  padding-right: 0;
+}
+.card__review {
+  display: flex;
+}
+.card__review img {
+  margin-right: 20px;
+  border-radius: 4px;
+}
+.feedback-card__reviews-content {
+  flex-grow: 1;
+}
+.feedback-card__reviews {
+  border-top: 1px solid #979797;
+}
+.link {
+  margin-top: 0;
+  font-weight: 700;
+  color: #6f6f6f;
+}
+.review-text {
+  margin-top: 3px;
+  width: 512px;
+  font-size: 14px;
+}
+.link-task {
+  font-size: 16px;
+  margin-top: 18px;
+}
+.link-name {
+  font-size: 18px;
+  margin-bottom: 3px;
+}
+.card__review-rate p {
+  font-weight: 700;
+  font-size: 45px;
+  margin: 0;
+}
+.big-rate {
+  position: relative;
+  padding-right: 55px;
+  span {
+    position: absolute;
+    content: "";
+    width: 25px;
+    height: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 16px;
+    left: 30px;
+  }
+}
+.five-rate {
+  @include five-rate-color();
+  span {
+    background-image: url("../img/star-rate.png");
+  }
+}
+.three-rate {
+  @include three-rate-color();
+  span {
+    background-image: url("../img/three-rate.png");
+  }
+}

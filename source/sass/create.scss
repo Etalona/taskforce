@@ -1,0 +1,130 @@
+.create__task {
+  width: 1100px;
+  @include light-color;
+}
+.create__task h1 {
+  margin-bottom: 0;
+  padding-left: 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #bfbfbf;
+}
+.create__task-main {
+  padding-left: 20px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #bfbfbf;
+  display: flex;
+  justify-content: space-between;
+}
+.create__task-form {
+  width: 520px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 100px;
+}
+.form-create label {
+  margin-top: 29px;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+.form-create span {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  color: #8a8a8d;
+}
+.create__file {
+  display: flex;
+ justify-content: center;
+  align-items: flex-end;
+  width: 519px;
+  height: 104px;
+  border: 1px dashed #8a8a8d;
+  background-image: url("../img/upload.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 10px;
+  border-radius: 6px;
+  &:hover {
+    background-color: #f0f0f0;
+  }
+}
+.create__file span {
+  margin-bottom: 15px;
+}
+.create__file:hover span {
+  font-size: 0;
+}
+
+.create__price-time {
+  display: flex;
+  justify-content: space-between;
+}
+.create__price-time--wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 230px;
+}
+.create__warnings {
+  display: flex;
+  flex-direction: column;
+  margin-top: 61px;
+}
+.warning-item {
+  position: relative;
+  width: 430px;
+  min-height: 200px;
+  padding-left: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 35px;
+  border-bottom-left-radius: 20px;
+}
+.warning-item::after {
+  position: absolute;
+  content: "";
+  width: 100px;
+  height: 100px;
+  border-bottom-left-radius: 20px;
+  top: 0;
+  right: 0;
+}
+.warning-item--advice::after {
+  background-color: #72b9fe;
+  background-image: url("../img/info-icon.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.warning-item--error::after {
+  background-color: #df4a4a;
+  background-image: url("../img/triangle-icon.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.warning-item h2 {
+  max-width: 310px;
+  margin: 0;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+.warning-item h3{
+  margin-bottom: 6px;
+}
+.warning-item  p {
+  max-width: 382px;
+  margin-top: 6px;
+}
+.warning-item--advice  h3,
+.warning-item--advice  p {
+  color: #5e5d5f;
+}
+.warning-item--advice {
+  @include advice-color();
+}
+.warning-item--error {
+  @include error-color();
+  color: #ffffff ;
+}
+.create__task button {
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}

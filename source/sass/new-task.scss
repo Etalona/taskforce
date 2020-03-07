@@ -1,0 +1,131 @@
+.page-container {
+  display: flex;
+  justify-content: center;
+}
+.new-task {
+  width: 780px;
+  margin-right: 20px;
+  @include light-color();
+  margin-bottom: auto;
+}
+.new-task__wrapper {
+  padding: 15px 20px 0 20px;
+}
+.new-task__wrapper h1 {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+.new-task__card {
+  font-family: "Myriad Pro", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  border-top: 1px solid #ececec;
+  display: flex;
+  flex-wrap: wrap;
+}
+.new-task__title a h2 {
+  font-weight: 600;
+  font-size: 22px;
+  margin-bottom: 6px;
+  margin-top: 33px;
+}
+.new-task__title a p {
+  font-weight: 400;
+  font-size: 15px;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+.new-task__icon {
+  width: 50px;
+  height: 50px;
+  border: 3px solid transparent;
+  border-radius: 10px;
+  margin-top: 33px;
+}
+.new-task__icon--translation {
+  background-image: url("../img/man-running.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 35px;
+  @include translation-task-color();
+}
+.new-task__icon--clean{
+  background-image: url("../img/clean.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 32px;
+  @include clean-task-color();
+}
+.new-task__icon--cargo {
+  background-image: url("../img/cargo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 35px;
+  @include cargo-task-color();
+}
+
+.new-task__price {
+  font-weight: 700;
+  font-size: 30px;
+  margin-bottom: 22px;
+
+}
+.new-task__price b {
+  font-size: 26px;
+}
+.new-task__price--translation{
+  @include translation-color();
+}
+.new-task__price--clean{
+  @include clean-color();
+}
+.new-task__price--cargo {
+  @include cargo-color();
+}
+.new-task_description {
+  margin-top: 0;
+}
+.new-task__time {
+  font-family: "Myriad Pro", sans-serif;
+  position: relative;
+  font-weight: 300;
+  font-size: 13px;
+  padding-left: 19px;
+
+}
+.new-task__card span::before {
+  position: absolute;
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-image: url("../img/clock.png");
+  top: 1px;
+  left: 0;
+}
+.new-task__place {
+  position: relative;
+  font-weight: 300;
+  font-size: 13px;
+  padding-left: 19px;
+  margin-top: 0;
+
+}
+.new-task__place::before {
+  position: absolute;
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-image: url("../img/home-icon.png");
+  top: 1px;
+  left: 0;
+}
+.new-task__title,
+.new-task_description,
+.new-task__place {
+  width: 460px;
+  margin-right: 100px;
+  flex-grow: 1;
+}

@@ -1,0 +1,285 @@
+.input {
+  color: #8F9BB2;
+  border: 1px solid #e4e9f2;
+  border-radius: 4px;
+  background-color: #f7f9fc;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #e4e9f2;
+  }
+  &:disabled {
+    background-color: #FCFDFE;
+    cursor: default;
+    border-color: #F1F3F8;
+    &::-webkit-input-placeholder {
+      color: #D4D9E2;
+    }
+  }
+}
+.input-danger + input  {
+  border-color: #FF116E;
+  & + span {
+    color:  #FF116E;
+  }
+}
+.input-middle {
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-right: 16px;
+  padding-left: 16px;
+  margin-bottom: 35px;
+}
+.multiple-select {
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-right: 35px;
+  padding-left: 16px;
+  margin-bottom: 16px;
+  /*Отмена стандартного отображения селекта*/
+  /*for WebKit*/
+  -webkit-appearance: none;
+  /* for FF */
+  -moz-appearance: none;
+  text-indent: 0.01px;
+  text-overflow: '';
+  /* for IE */
+  -ms-appearance: none;
+  appearance: none!important;
+  background-image: url("../img/select-arrow.png");
+  background-position: 230px 20px;
+  background-repeat: no-repeat;
+}
+.input-navigation {
+  background-image: url("../img/navigation.png");
+  background-position: 480px 10px;
+  background-repeat: no-repeat;
+  margin-bottom: 10px;
+}
+.input-money {
+  background-image: url("../img/ruble-sign.png");
+  background-position: 195px 12px;
+  background-repeat: no-repeat;
+  margin-bottom: 10px;
+}
+.input-date {
+  background-image: url("../img/calendar.png");
+  background-position: 195px 12px;
+  background-repeat: no-repeat;
+  margin-bottom: 10px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+.multiple-select-big {
+  background-position: 490px 20px;
+  margin-bottom: 10px;
+}
+.registration-town {
+  background-position: 325px 20px;
+}
+.checkbox__input + label::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 18px;
+  height: 18px;
+  background-image: url("../img/checkbox-off.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.checkbox__input:checked + label::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 18px;
+  height: 18px;
+  background-image: url("../img/checkbox-on.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.checkbox__input:disabled + label::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 18px;
+  height: 18px;
+  background-image: url("../img/checkbox-off-disabled.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  cursor: default;
+}
+.checkbox__input:checked:disabled + label::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 18px;
+  height: 18px;
+  background-image: url("../img/checkbox-on-disabled.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  cursor: default;
+}
+.button {
+  align-self: flex-end;
+  padding: 15px 38px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.8px;
+  color: #ffffff;
+  @include button-color();
+  border:1px solid transparent;
+  border-radius: 4px;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.button:hover {
+  @include button-hover-color();
+}
+.button:active {
+  @include button-active-color();
+}
+.button__big-color {
+  align-self: flex-start;
+  font-family: 'PT Sans', sans-serif;
+  padding: 17px 29px;
+  margin-right: 20px;
+  font-weight: 400;
+  font-size: 18px;
+}
+.button__small-color {
+  position: relative;
+  font-weight: 400;
+  font-size: 12px;
+  padding:  9px 14px;
+  padding-bottom: 8px;
+  padding-left: 32px;
+  margin-right: 15px;
+}
+.chat__button {
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 10px 20px;
+  margin: 0;
+  @include pagination-color();
+}
+.button__registration {
+  align-self: flex-start;
+  margin-top: 35px;
+}
+.red-button {
+  @include red-button();
+  padding: 20px;
+}
+.response-button {
+  @include response-button-color();
+}
+.refusal-button {
+  @include refusal-button-color();
+}
+.connection-button {
+  @include connection-button-color();
+}
+.button__chat {
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  background-color: transparent;
+  background-image: url("../img/chat.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.button__form-modal {
+  margin-left: 20px;
+  padding: 14px 20px;
+}
+.feedback-card__actions .response-button::before {
+  position: absolute;
+  content: "";
+  width: 19px;
+  height: 19px;
+  background-image: url("../img/checkmark.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  top: 6px ;
+  left: 7px;
+}
+.feedback-card__actions  .refusal-button::before {
+  position: absolute;
+  content: "";
+  width: 19px;
+  height: 19px;
+  background-image: url("../img/close-mark.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  top: 6px ;
+  left: 7px;
+}
+.textarea {
+  padding: 14px 15px;
+  resize: none;
+  margin-bottom: 10px;
+}
+.textarea-chat {
+  padding: 15px 16px;
+}
+.new-task__pagination {
+  padding-left: 20px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  @include contrast-medium-color();
+  border-top: 1px solid #c8c5c5;
+}
+.new-task__pagination-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+.pagination__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 39px;
+  height: 40px;
+  @include pagination-color();
+  cursor: pointer;
+  border-right: 1px solid #2436ab;
+}
+.pagination__item a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.new-task__pagination-list li:first-child,
+.new-task__pagination-list li:last-child {
+  background-image: url("../img/arrow.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-left: 1px solid transparent;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+.new-task__pagination-list li:last-child {
+  transform: scale(-1, 1);
+  border-right: none;
+}
+.pagination__item--current,
+.pagination__item:hover  {
+  @include pagination-current-color();
+}
+.link-regular {
+    color: #1e90ff;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+      color: #005db8;
+    }
+}
+
+

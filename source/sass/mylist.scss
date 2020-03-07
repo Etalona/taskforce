@@ -1,0 +1,65 @@
+.my-list__wrapper {
+width: 690px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  margin-right: 0;
+}
+.my-list {
+  margin-right: 0;
+  @include light-color();
+}
+.task-status {
+  padding: 6px 14px;
+  border-radius: 5px;
+  align-self: center;
+  color: #ffffff;
+}
+.done-status {
+  @include done-status-color();
+}
+.new-status {
+  @include cargo-task-color();
+}
+.my-list__bottom {
+  display: flex;
+  align-items: baseline;
+  width: 710px;
+  margin-left: 15px;
+  padding-bottom: 22px;
+}
+.my-list__bottom .link-name {
+  width: 440px;
+  font-size: 16px;
+}
+.my-list__bottom-chat {
+  position: relative;
+  width: 22px;
+  height: 22px;
+  background-image: url("../img/message-circle.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 50px;
+}
+.my-list__bottom-chat--new::before {
+  position: absolute;
+  content: "";
+  width: 14px;
+  height: 18px;
+  border-radius: 12px;
+  @include clean-task-color();
+  color: #ffffff;
+  padding-left: 5px;
+  top: -9px;
+  right: -9px;
+}
+.my-list__bottom span::before{
+    display: none;
+}
+.my-list__bottom-chat--new b {
+  position: absolute;
+  font-size: 12px;
+  color: #ffffff;
+  top: -8px;
+  right: -4px;
+}

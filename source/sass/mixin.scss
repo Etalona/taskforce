@@ -1,0 +1,102 @@
+@mixin contrast-color() {
+  background-color: #1e90ff;
+}
+@mixin button-color() {
+  background-color: #3742fa;
+}
+@mixin button-hover-color() {
+  background-color: #598bff;
+}
+@mixin response-button-color()  {
+  background-color: #ffaa00;
+}
+@mixin refusal-button-color() {
+  background-color: #ff3d71;
+}
+@mixin connection-button-color()  {
+  background-color: #00e096;
+}
+@mixin button-active-color() {
+  background-color: #274bdb;
+}
+@mixin light-color() {
+  background-color: #ffffff;
+}
+@mixin medium-color() {
+  background-color: #f1f2f6;
+}
+@mixin contrast-medium-color() {
+  background-color: #f8f8f8;
+}
+@mixin footer-color() {
+  background-color: #2f3542;
+}
+@mixin font-color() {
+ color: #333438;
+}
+@mixin translation-task-color() {
+  background-color: #5f5f5f;
+}
+@mixin translation-color() {
+  color: #5f5f5f;
+}
+@mixin clean-task-color() {
+  background-color: #ff6b81;
+}
+@mixin clean-color() {
+  color: #ff6b81;
+}
+@mixin cargo-task-color() {
+  background-color: #ff7f50;
+}
+@mixin cargo-color() {
+  color: #ff7f50;
+}
+@mixin courier-task-color() {
+  background-color: #1e90ff;
+}
+@mixin event-task-color() {
+  background-color: #2f3542;
+}
+@mixin event-color() {
+  color: #2f3542;
+}
+@mixin pagination-color() {
+  background-color: #3366ff;
+}
+@mixin pagination-current-color {
+  background-color: #1a34b8;
+}
+@mixin menu-toggle-active {
+  background-color: #6c5ce7;
+}
+@mixin hover-menu-toggle {
+  background-color: #a9cef4;
+}
+@mixin feedback-color {
+  background-color: #b6c1d0;
+}
+@mixin message-in-color {
+  background-color: #b1d0fe;
+}
+@mixin message-out-color {
+  background-color: #e6e6e6;
+}
+@mixin advice-color {
+  background-color: #cbe5ff;
+}
+@mixin error-color{
+  background-color: #ff7675;
+}
+@mixin five-rate-color {
+ color: #ff7f50;
+}
+@mixin three-rate-color {
+  color: #c71d1d;
+}
+@mixin done-status-color {
+  background-color: #00b894;
+}
+@mixin red-button {
+  background-color: #ff4757;
+}
