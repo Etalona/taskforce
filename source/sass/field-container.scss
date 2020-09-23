@@ -1,0 +1,22 @@
+.field-container {
+  display: flex;
+  flex-direction: column;
+}
+.field-container--registration {
+  padding-bottom: 20px;
+}
+.field-container .registration__text-error {
+  display: none;
+}
+.field-container--error .registration__text-error {
+  display: inline;
+}
+.field-container--error input,
+.field-container--error textarea,
+.field-container--error select,
+.field-container--error .create__file {
+  border-color: #FF116E;
+}
+.field-container--error span {
+  color:  #FF116E;
+}

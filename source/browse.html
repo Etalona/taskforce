@@ -194,23 +194,31 @@
                         </fieldset>
                         <fieldset class="search-task__categories">
                             <legend>Дополнительно</legend>
-                            <label class="checkbox__legend">
-                                <input class="visually-hidden checkbox__input" type="checkbox" name="" value="">
-                                <span>Без исполнителя</span>
-                            </label>
-                            <label class="checkbox__legend">
-                                <input class="visually-hidden checkbox__input" id="7" type="checkbox" name="" value="" checked>
-                                <span>Удаленная работа</span>
-                            </label>
+                            <div>
+                                <label class="checkbox__legend">
+                                    <input class="visually-hidden checkbox__input" type="checkbox" name="" value="">
+                                    <span>Без исполнителя</span>
+                                </label>
+                            </div>
+                            <div>
+                                <label class="checkbox__legend">
+                                    <input class="visually-hidden checkbox__input" id="7" type="checkbox" name="" value="" checked>
+                                    <span>Удаленная работа</span>
+                                </label>
+                            </div>
                         </fieldset>
-                       <label class="search-task__name" for="8">Период</label>
-                           <select class="multiple-select input" id="8"size="1" name="time[]">
-                            <option value="day">За день</option>
-                            <option selected value="week">За неделю</option>
-                            <option value="month">За месяц</option>
-                        </select>
-                        <label class="search-task__name" for="9">Поиск по названию</label>
+                        <div class="field-container">
+                           <label class="search-task__name" for="8">Период</label>
+                               <select class="multiple-select input" id="8"size="1" name="time[]">
+                                <option value="day">За день</option>
+                                <option selected value="week">За неделю</option>
+                                <option value="month">За месяц</option>
+                            </select>
+                        </div>
+                        <div class="field-container">
+                            <label class="search-task__name" for="9">Поиск по названию</label>
                             <input class="input-middle input" id="9" type="search" name="q" placeholder="">
+                        </div>
                         <button class="button" type="submit">Искать</button>
                     </form>
                 </div>

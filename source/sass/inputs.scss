@@ -17,12 +17,6 @@
     }
   }
 }
-.input-danger + input  {
-  border-color: #FF116E;
-  & + span {
-    color:  #FF116E;
-  }
-}
 .input-middle {
   padding-top: 14px;
   padding-bottom: 14px;
@@ -297,5 +291,3 @@
       color: #005db8;
     }
 }
-
-
