@@ -8,15 +8,15 @@
 .field-container .registration__text-error {
   display: none;
 }
-.field-container--error .registration__text-error {
+.has-error .registration__text-error {
   display: inline;
 }
-.field-container--error input,
-.field-container--error textarea,
-.field-container--error select,
-.field-container--error .create__file {
+.has-error input,
+.has-error textarea,
+.has-error select,
+.has-error .create__file {
   border-color: #FF116E;
 }
-.field-container--error span {
+.has-error span {
   color:  #FF116E;
 }
